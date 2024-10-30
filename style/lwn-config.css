@@ -1,0 +1,103 @@
+/* 管理画面タブ切り替え */
+.lwn_tab_wrap{width:95%;}
+input[name="lwn_tab_btn"]{display:none;}
+.lwn_tab_area{font-size:0; margin:0px;}
+.lwn_tab_area label{width:150px; margin:0px 10px 0px 0px; display:inline-block; padding:12px 0; color:#999; background:#ddd; text-align:center; font-size:13px; cursor:pointer;}
+.lwn_tab_area label:hover{opacity:0.5;}
+.lwn_panel_area{background:#fff;}
+.lwn_tab_panel{padding:10px; display:none;}
+.lwn_tab_panel p{font-size:14px; letter-spacing:1px;}
+
+#lwn_tab1:checked ~ .lwn_tab_area .lwn_tab1_label{background:#fff; color:#000;}
+#lwn_tab1:checked ~ .lwn_panel_area #lwn_panel1{display:block;}
+#lwn_tab2:checked ~ .lwn_tab_area .lwn_tab2_label{background:#fff; color:#000;}
+#lwn_tab2:checked ~ .lwn_panel_area #lwn_panel2{display:block;}
+#lwn_tab3:checked ~ .lwn_tab_area .lwn_tab3_label{background:#fff; color:#000;}
+#lwn_tab3:checked ~ .lwn_panel_area #lwn_panel3{display:block;}
+#lwn_tab4:checked ~ .lwn_tab_area .lwn_tab4_label{background:#fff; color:#000;}
+#lwn_tab4:checked ~ .lwn_panel_area #lwn_panel4{display:block;}
+
+/* 管理画面ヘッダメッセージ枠 */
+.lwn_message {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: solid 1px #000000;
+    background-color: #ffffff;
+
+}
+.lwn_message p {
+    margin: 0; 
+    padding: 0;
+}
+
+/* note取り込み・処理結果枠線 */
+.lwn_flex_box {
+    display: flex;
+    justify-content:space-around;
+}
+.lwn_flex_item {
+    margin: 0em 0.3em 0em 0.3em;
+    padding: 0em 0em 1em 0em;
+    width: 100%;
+    border: solid 2px #34675C;
+    text-align: center;
+}
+.lwn_flex_item h2 {
+    font-size: 15px;
+    color:#FFFFFF;
+    background: #7DA3A1;
+    margin-top: 0em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+.lwn_note_key{
+    width:70%;
+}
+
+/* 取り込み済みnote一覧表示 */
+.lwn_movie_list *, .lwn_movie_list *:before, .lwn_movie_list *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.lwn_movie_list {
+    margin: 1em 0em 0em 0em;
+	width: 100%;
+	border-collapse: collapse;
+}
+.lwn_movie_list th {
+    width: auto;
+	background: #f4f4f4;
+	padding: 5px;
+	border: 1px solid #dddddd;
+}
+.lwn_movie_list td {
+	text-align: left;
+	padding: 5px;
+	border: 1px solid #dddddd;
+}
+
+/* ページネーション */
+.lwn_page_list {
+    text-align: center;
+        margin: 0em 0em 2em 0em;
+}
+.lwn_page_list a{
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    margin: 0em 0.2em 0em 0.2em;
+    font-weight: bold;
+    border: solid 2px #34675C;
+    text-decoration: none;
+}
+.lwn_page_list .lwn_page_center{
+    padding: 0.3em 0.6em 0.3em 0.7em;
+    margin: 0em 0em 0em 0em;
+}
+.lwn_template_html textarea{
+    width:100%;
+}
+.lwn_template_css textarea{
+    width:100%;
+}
+.lwn_design_img{
+    height:15rem;
+}

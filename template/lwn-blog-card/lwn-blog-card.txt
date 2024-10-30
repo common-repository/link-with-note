@@ -1,0 +1,14 @@
+<div class="lwn-card">
+    <a href="{{content_url}}" {{target_blank}}>
+        {{thumb}}
+        <div class="lwn-contents">
+            {{title}}
+            {{index_list}}
+            {{body}}
+            {{hashtag_list}}
+            {{like_count}}
+            {{comment_count}}
+            {{creator_info_field}}
+        </div>
+    </a>
+</div>

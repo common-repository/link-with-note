@@ -1,0 +1,14 @@
+<a href="{{content_url}}" class="lwn-container">
+    <div class="lwn-left">
+        {{thumb}}
+        {{like_count}}
+        {{comment_count}}
+        {{creator_info_field}}   
+    </div>
+    <div class="lwn-contents">
+        {{title}}
+        {{index_list}}
+        {{body}}
+        {{hashtag_list}}
+    </div>
+</a>
